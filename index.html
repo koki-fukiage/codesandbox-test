@@ -3,12 +3,41 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
   </head>
 
   <body>
-    <div id="app"></div>
-
-    <p>修正しました</p>
+    <!-- {/* TODO */} -->
+    <div class="input-area">
+      <input id="add-text" placeholder="TODOを入力" />
+      <button id="add-button">追加</button>
+    </div>
+    <!-- {/* 未完了 */} -->
+    <div class="imcomplete-area">
+      <p class="title">未完了のTODO</p>
+      <ul id="imcomplete-list">
+        <div class="list-row">
+          <li>ああああ</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+        <div class="list-row">
+          <li>いいいい</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+      </ul>
+    </div>
+    <!-- {/* 完了 */} -->
+    <div class="complete-area">
+      <p class="title">完了のTODO</p>
+      <ul id="complete-list">
+        <div class="list-row">
+          <li>ううう</li>
+          <button>戻す</button>
+        </div>
+      </ul>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
